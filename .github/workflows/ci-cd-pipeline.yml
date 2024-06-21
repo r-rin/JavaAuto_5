@@ -28,7 +28,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
 
-    - name: Checkstlye code
+    - name: Checkstyle code
       run: gradle checkstyleCode
 
     - name: Build with Gradle
