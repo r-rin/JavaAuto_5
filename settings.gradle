@@ -1,0 +1,6 @@
+rootProject.name = 'JavaAuto_5'
+include 'web-core'
+include 'web-services'
+include 'web-controllers'
+include 'web-start'
+

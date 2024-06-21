@@ -1,0 +1,28 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    group = 'com.github.rin.javaauto'
+    version = '1.0.0'
+
+    dependencies {
+        implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.3.0'
+    }
+}
+
+tasks.register('createProjectZip', Zip) {
+    def date = new Date().format("yyyy-MM-dd_HH-mm-ss")
+    archiveFileName = "${project.name}-${date}.zip"
+    destinationDirectory = file("$projectDir/distributions")
+    println projectDir
+    from projectDir
+    exclude '**/build/**'
+    exclude 'distributions/**'
+    include '**/*'
+}
