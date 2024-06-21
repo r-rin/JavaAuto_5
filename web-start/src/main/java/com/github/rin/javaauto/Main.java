@@ -1,7 +1,21 @@
 package com.github.rin.javaauto;
 
+/**
+ * Main class to start the Spring Boot application.
+ */
 public class Main {
-    public static void main(String[] args) {
+
+    /**
+     * Main method to start the Spring Boot application.
+     *
+     * @param args Command line arguments
+     */
+    public static void main(final String[] args) {
         WebApplication.start(args);
     }
+
+    /**
+     * Constructor.
+     */
+    private Main() { }
 }

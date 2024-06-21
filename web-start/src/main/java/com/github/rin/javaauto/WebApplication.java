@@ -1,18 +1,23 @@
 package com.github.rin.javaauto;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 
-import java.util.Arrays;
-
+/**
+ * Main class for starting the web application.
+ */
 @SpringBootApplication
 public class WebApplication {
 
-    public static void start(String[] args) {
+    /**
+     * Starts the Spring Boot application.
+     *
+     * @param args Command line arguments
+     */
+    public static void start(final String[] args) {
         SpringApplication.run(WebApplication.class, args);
     }
+
+    private WebApplication() { }
 
 }
