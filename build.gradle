@@ -11,7 +11,7 @@ publishing {
             url = "https://maven.pkg.github.com/r-rin/JavaAuto_5"
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("JAVA_SECRET")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }

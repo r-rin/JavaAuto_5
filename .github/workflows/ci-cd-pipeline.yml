@@ -65,4 +65,4 @@ jobs:
       - name: Publish to GitHub Packages
         run: gradle publish
         env:
-          TOKEN: ${{ secrets.JAVA_SECRET }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
