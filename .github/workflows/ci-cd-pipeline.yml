@@ -38,3 +38,4 @@ jobs:
       uses: actions/upload-artifact@v4.3.3
       with:
         path: build/libs/*.jar
+        name: JavaAuto_5-$(date +"%Y%m%d-%H%M%S")
