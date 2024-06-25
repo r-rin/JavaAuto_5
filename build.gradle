@@ -5,6 +5,14 @@ plugins {
 }
 
 publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'com.github.rin.javaauto'
+            artifactId = 'web-book-storage'
+            version = '1.0'
+        }
+    }
     repositories {
         maven {
             name = "GitHubPackages"
